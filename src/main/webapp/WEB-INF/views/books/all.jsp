@@ -8,6 +8,7 @@
 
 <table border="1">
     <thead>
+    <th>id</th>
     <th>isbn</th>
     <th>title</th>
     <th>author</th>
@@ -17,6 +18,7 @@
     <tbody>
     <c:forEach items="${books}" var="book">
         <tr>
+            <td><c:out value="${book.id}"/></td>
             <td><c:out value="${book.isbn}"/></td>
             <td><c:out value="${book.title}"/></td>
             <td><c:out value="${book.author}"/></td>
